@@ -2,31 +2,12 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  position: sticky;
-  background: white;
-  margin-top: 1rem;
-}
-
-.wrapper ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  float: right;
-}
-
-.wrapper li {
-  padding: 1rem 1rem 0rem 1rem;
-}
-
-.wrapper img {
-  width: 10rem;
-  margin: 1rem;
+:root {
+  --background: rgba(89, 164, 213, 0.85);
+  --color2: #e46e25;
 }
 
 section {
@@ -36,9 +17,29 @@ section {
   margin-right: max(5%, 15px);
 }
 
+.divider {
+  width: calc(100% - 2rem);
+  height: 0.2rem;
+  background: var(--color2);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+/*-------- Top section with background video -------*/
+.bgVideo {
+  width: 100%;
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
 .topSection h1,
 .topSection p {
   text-align: center;
+  color: white;
 }
 
 .topSection button {
@@ -48,22 +49,62 @@ section {
   transform: translate(-50%, 100%);
 }
 
+.topSection {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.topSection div {
+  transform: translate(0, 100%);
+}
+
+/*------------ campaign video section--------------*/
+.videoSection {
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+
 .videoSection div {
   margin-bottom: 20px;
 }
 
-.divider {
-  width: calc(100% - 2rem);
-  height: 0.5rem;
-  background: red;
-  margin-left: auto;
-  margin-right: auto;
+.videoSection iframe {
+  width: 100%;
+  height: 15rem;
 }
 
+/* -------------- section with 3 divs ------- */
 .third img {
   width: 50px;
 }
 
-#thirds {
+.third {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------- media queries --------- */
+@media screen and (min-width: 800px) {
+  #thirds {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .videoSection {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .videoSection iframe {
+    width: 50vw;
+  }
 }
