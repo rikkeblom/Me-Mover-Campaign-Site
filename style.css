@@ -27,9 +27,11 @@ section {
 }
 
 /*-------- Top section with background video -------*/
-.bgVideo {
+#videoBG {
   width: 100%;
   height: 30rem;
+  object-fit: cover;
+  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
