@@ -77,6 +77,46 @@
     </section>
 
     <div class="divider"></div>
-    <section></section>
+
+    <section id="formSection">
+      <img src="img/bike.png" id="formIMG" />
+      <div id="formDiv">
+        <h2 id="signupH2">Sign up for the newsletter</h2>
+        <label for="form-firstName">First name *</label>
+        <input
+          type="text"
+          name="first-name"
+          id="form-firstName"
+          placeholder="First Name"
+          required
+        />
+        <label for="form-lastname">Last name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="form-lastname"
+          placeholder="Last Name"
+        />
+
+        <label for="form-email">E-mail *</label>
+        <input
+          type="email"
+          name="email"
+          id="form-email"
+          placeholder="john@email.com"
+          required
+        />
+        <div id="formPrivacy">
+          <input type="checkbox" name="privacy-agreement" id="form-privacy" />
+          <label for="form-privacy"
+            >I have read and agree with
+            <a href="https://me-mover.dk/privatlivspolitik-cookies/"
+              >Me-Mover's privacy policy</a
+            ></label
+          >
+        </div>
+        <button class="white-button">Send me many emails</button>
+      </div>
+    </section>
   </body>
 </html>
