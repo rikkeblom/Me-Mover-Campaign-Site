@@ -244,6 +244,41 @@ footer p {
   font-size: 0.8rem;
 }
 
+/* ------------  Slideshow ------------ */
+.slideSection {
+  height: 10rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slide {
+  text-align: center;
+  display: none;
+  padding: 20px;
+  transform: translateY(2.5rem);
+}
+
+.prev {
+  position: absolute;
+  left: 1rem;
+  font-size: 3rem;
+  color: var(--background);
+  transform: translate(1rem, -2rem);
+}
+
+.next {
+  position: absolute;
+  right: 1rem;
+  font-size: 3rem;
+  color: var(--background);
+  transform: translate(-1rem, -2rem);
+}
+
+.prev:hover,
+.next:hover {
+  color: var(--color2);
+}
+
 /*---------- media queries --------- */
 @media screen and (min-width: 800px) {
   #thirds {
