@@ -19,6 +19,11 @@ section {
   margin-right: max(5%, 15px);
 }
 
+.sand {
+  width: 100%;
+  background: #edceaf;
+}
+
 .white-button {
   background-color: white;
   box-shadow: 1px 1px 5px grey;
@@ -183,6 +188,10 @@ input:required:invalid {
 }
 
 /* --------- image section ---------- */
+.imageSection {
+  padding-bottom: 2rem;
+}
+
 .imageSection figure {
   width: 100%;
 }
@@ -191,6 +200,10 @@ input:required:invalid {
   width: 50%;
   display: block;
   margin: auto;
+}
+
+.imageSection div {
+  margin-top: 2rem;
 }
 
 /*---------- footer ----------- */
