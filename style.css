@@ -165,6 +165,57 @@ input:required:invalid {
   margin-top: 1rem;
 }
 
+/*---------- footer ----------- */
+footer {
+  font-size: 0.6rem;
+  color: grey;
+  text-transform: uppercase;
+  margin: 6rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footSoMe ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footSoMe li {
+  list-style: none;
+}
+
+.footSoMe img {
+  height: 2rem;
+}
+
+.footInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  column-gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footInfo a {
+  color: grey;
+  font-size: 0.8rem;
+}
+
 /*---------- media queries --------- */
 @media screen and (min-width: 800px) {
   #thirds {
