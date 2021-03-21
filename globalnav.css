@@ -26,7 +26,7 @@ header img {
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
+  outline: 3px solid rgba(89, 164, 213, 0.85);
 }
 
 .nav-toggle-label {
