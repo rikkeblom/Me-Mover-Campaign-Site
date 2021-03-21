@@ -12,6 +12,10 @@
   --color2: #e46e25;
 }
 
+h2 {
+  margin-bottom: 0.5rem;
+}
+
 section {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -71,12 +75,31 @@ section {
   color: white;
 }
 
+.topSection h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px black;
+}
+/* 
 .topSection button {
   top: 50%;
   left: 50%;
   position: relative;
-  transform: translate(-50%, 100%);
-}
+  transform: translate(-50%, 50%);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 5px grey;
+  border: solid 1px var(--background);
+  color: var(--background);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+} */
 
 .topSection {
   height: 300px;
@@ -88,7 +111,7 @@ section {
 }
 
 .topSection div {
-  transform: translate(0, 100%);
+  transform: translate(0, 50%);
 }
 
 /*------------ campaign video section--------------*/
@@ -104,6 +127,10 @@ section {
 .videoSection video {
   width: 100%;
   height: auto;
+}
+
+.videoSection h2 {
+  color: var(--color2);
 }
 
 /* -------------- section with 3 divs ------- */
@@ -205,7 +232,6 @@ input:required:invalid {
 .imageSection div {
   margin-top: 2rem;
 }
-
 /*---------- footer ----------- */
 footer {
   font-size: 0.6rem;
