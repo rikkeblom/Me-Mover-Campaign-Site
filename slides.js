@@ -1,4 +1,4 @@
-var slideNumber = 1;
+let slideNumber = 1;
 showSlides(slideNumber);
 
 function changeSlide(n) {
@@ -6,8 +6,8 @@ function changeSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var x = document.querySelectorAll(".slide");
+  let i;
+  const x = document.querySelectorAll(".slide");
   if (n > x.length) {
     slideNumber = 1;
   }
