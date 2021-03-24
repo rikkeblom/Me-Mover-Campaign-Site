@@ -375,9 +375,13 @@ footer p {
   }
   .imageSection div {
     width: min(50%, 500px);
+    margin-top: calc(1rem - 5px);
+    margin-bottom: calc(1rem - 5px);
   }
 
   .imageSection img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
   }
 
